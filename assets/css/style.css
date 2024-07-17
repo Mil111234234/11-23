@@ -1,0 +1,994 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+@font-face {
+    font-family: "Brusher" ;
+    src: url(/assets/shrifts/ofont.ru_Brusher.ttf);
+}
+
+@font-face {
+    font-family: "Sunday" ;
+    src: url(/assets/shrifts/ofont.ru_Sunday.ttf);
+}
+
+
+html{
+    width: 100%;
+}
+
+
+body{
+    width: 100%;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header{
+    background-color: #361D04;
+    padding: 35px;
+    /* position: fixed;
+    width: 100%; */
+    
+}
+.header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header-nav{
+    display: flex;
+    font-family: Sunday;
+    gap: 44px;
+    text-decoration: none;
+}
+
+.header-nav a{
+    color: #FFFFFF;
+}
+
+.header-nav a:hover{
+    text-shadow: 0px 0px 30px #ffffff ;
+}
+
+.burger-menu{
+    display: none;
+}
+
+@media (max-width:800px) {
+    .header-nav{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:350px) {
+    .logo img{
+        width: 100%;
+    }
+    .header-wrapper{
+        flex-direction: row;
+        justify-content: center;
+        gap:30px;
+    }
+}
+
+
+/* banner */
+
+.banner{
+    background-image: url(/assets/img/banner/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    background-position: center;
+}
+
+.banner-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-text{
+    font-family: Brusher ;
+    color: #FFFFFF;
+    margin-top: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text h1{
+    font-size: 96px;
+    font-weight: 100;
+    position:relative ;
+}
+.banner-leaner{
+    background-color: #FFBE7C;
+    width: 516px;
+    height: 3px;
+    border-radius: 90px;
+    margin-top: -30px;
+}
+
+.banner-text h3{
+    margin-top: 40px ;
+    font-size: 38px;
+    font-weight: 100;
+}
+
+.bunner-button{
+    display: flex;
+
+}
+.bunner-button button{
+    margin-top: 76px;
+    display: flex;
+    background-color: rgb(200, 144, 87, 88% );
+    width: 235px;
+    height: 73px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #B6741E ;
+    border: none;
+    font-family: Brusher ;
+    
+}
+
+.bunner-button button:hover{
+    box-shadow: 0px 0px 10px #ffffff ;
+    background-color: rgb(200, 144, 87 );
+}
+
+.bunner-button a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 100;
+} 
+
+@media (max-width:1200px) {
+    .banner{
+        background-position: center;
+    }
+}
+
+@media (max-width:500px){
+    .banner-text h1{
+        font-size: 90px;
+    }
+
+    .banner-leaner{
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width:400px){
+    .banner-text h1{
+        font-size: 70px;
+    }
+
+
+}
+
+/* us */
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    src: url(/assets/shrifts/MontserratAlternates-Regular.ttf);
+}
+
+.us{
+    background-color: #FFE4C1;
+    font-family: Montserrat Alternates;
+ 
+   padding: 30px;
+    
+}
+
+.us-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat Alternates;
+}
+
+.us-content{
+    display: flex;
+    flex-direction: row;
+   gap: 170px;
+   justify-content: center;
+   align-items: center;
+   font-family: Montserrat Alternates;
+
+}
+
+.us-wrapper h1{
+    margin-top: 46px;
+    font-family: Sunday;
+    font-size: 46px;
+    color: #774300;
+}
+
+.us-wrapper p{
+    margin-top: 46px;
+    font-family: Sunday;
+    font-size: 32px;
+    color: #774300;
+    font-family: Montserrat Alternates;
+    
+}
+.colortext{
+color: #33A000;
+}
+
+.strelka{
+    width: 50px;
+    height: 100px;
+}
+
+@media (max-width:960px) {
+    .us-content img{
+        width: 350px;
+
+    }
+
+    .strelka{
+        width: 40px;
+        height: 90px;
+    }
+}
+
+@media (max-width:830px) {
+    .us-content img{
+        width: 250px;
+
+    }
+
+    .us-wrapper p{
+        font-size: 24px;
+    }
+
+    .us-content{
+        gap:30px;
+    }
+    .us{
+        padding: 30px;
+       
+    }
+
+    .strelka{
+        width: 30px;
+        height: 80px;
+    }
+}
+
+@media (max-width:500px){
+
+    .us-content img{
+        width: 200px;
+
+    }
+
+    .us-wrapper p{
+        font-size: 20px;
+        
+    }
+
+    .us-content{
+        gap:10px;
+    }
+
+    .strelka{
+        width: 50px;
+        height: 100px;
+    }
+
+    .us-wrapper h1{
+        font-size: 30px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width:400px){
+
+    .us-content img{
+        width: 300px;
+
+    }
+
+    .us-wrapper h1{
+        font-size: 48px;
+        margin-top: 5px;
+    }
+
+    .us-wrapper p{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .us-content{
+        margin-top: 40px;
+        gap:10px;
+        flex-direction: column-reverse;
+    }
+
+    .us{
+        
+        padding: 30px;
+    }
+}
+
+
+
+/* drinks */
+
+.stocks{
+    display: flex;
+    background-color: #D1AC86 ;
+    
+}
+
+.stocks-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.stocks-wrapper h1{
+    font-family: Sunday;
+    color: #FFFFFF;
+    font-size: 48px;
+    
+}
+
+.stocks-content{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grains-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grains-content h1{
+    font-family: Brusher;
+    font-weight: 100;
+    font-size: 96px;
+    position: relative;
+    color: #774300;
+}
+
+.stocks-leaner{
+    width: 438px;
+    height: 2px;
+    background-color: #361D04;
+    margin-top: -30px;
+}
+
+.grains-content p{
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.strelka{
+   cursor: pointer;
+}
+
+
+
+
+@media (max-width:960px) {
+    
+}
+
+@media (max-width:780px) {
+    .stocks-wrapper h1{
+        font-size: 40px;
+    }
+
+    .grains-content h1{
+        font-size: 80px;
+    }
+
+    .strelka{
+        width: 40px;
+        height: 78px;
+    }
+    .strelka{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:690px) {
+    .stocks-wrapper h1{
+        font-size: 33px;
+    }
+
+    .grains-content h1{
+        font-size: 60px;
+    }
+
+    .grains-content p{
+        font-size: 21px;
+    }
+
+    .stocks-leaner{
+        width: 420px;
+    }
+
+    .strelka{
+        width: 30px;
+        height: 58px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .stocks-wrapper h1{
+        font-size: 24px;
+    }
+
+    .grains-content h1{
+        font-size: 58px;
+    }
+
+    .grains-content p{
+        font-size: 18px;
+    }
+
+    .stocks-leaner{
+        width: 350px;
+        margin-top: -20px;
+    }
+}
+
+@media (max-width:490px) {
+    .stocks-wrapper h1{
+        font-size: 24px;
+    }
+
+    .grains-content h1{
+        font-size: 50px;
+    }
+
+    .grains-content p{
+        font-size: 16px;
+    }
+
+    .stocks-leaner{
+      width: 300px;
+        margin-top: -20px;
+    }
+
+    .grains-content img{
+        width: 150px;
+    }
+
+    .strelka{
+        width: 30px;
+        height: 48px;
+    }
+
+}
+
+@media (max-width:410px) {
+
+    .grains-content img{
+        width: 150px;
+    }
+
+    .stocks-wrapper h1{
+        font-size: 32px;
+    }
+
+    .grains-content h1{
+        font-size: 50px;
+        
+    }
+
+    .grains-content p{
+        font-size: 16px;
+    }
+
+    .stocks-leaner{
+        width: 150px;
+        margin-top: -20px;
+    }
+
+    .strelka{
+        width: 30px;
+        height: 48px;
+    }
+}
+
+
+
+.stocks{ 
+    background-color: #D1AC86; 
+    display: flex; 
+    /* padding: 10px 10px; */ 
+  width: 100%; 
+} 
+ 
+.stocks-wrapper { 
+    height: 669px; 
+    width: 100%; 
+    margin-top: 23px; 
+    font-family: Sunday; 
+    color: #FFFFFF; 
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+ 
+    gap:39px; 
+} 
+ 
+.stocks-wrapper h1{ 
+    font-weight: 100; 
+    font-size: 48px; 
+    margin-top: 23px; 
+     
+} 
+ 
+.grains-content h1{ 
+    position: relative; 
+    font-family: Brusher; 
+    color: #774300; 
+    font-size: 96px; 
+    font-weight: 200; 
+  
+} 
+ 
+ 
+ 
+.stocks-content{ 
+    display: flex; 
+   align-items: center; 
+   justify-content: space-between; 
+   
+    width: 100%; 
+} 
+ 
+.grains-content{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+ 
+} 
+ 
+.stocks-leaner{ 
+    background-color: #000000; 
+    width: 438px; 
+    height: 2px; 
+    margin-top: -35px; 
+} 
+ 
+.grains-content p{ 
+    font-family:  Montserrat Alternates; 
+    font-size: 24px; 
+    margin-top: 6px ; 
+} 
+ 
+.strelka{ 
+    cursor: pointer; 
+} 
+ 
+@media (max-width:960px) { 
+    .stocks-content .strelka img{ 
+        width: 50px; 
+        height: 95px; 
+    } 
+ 
+ 
+ 
+} 
+ 
+@media (max-width:520px) { 
+    .grains-content h1{ 
+        font-size: 80px; 
+    } 
+ 
+    .stocks-leaner{ 
+        width: 100%; 
+    } 
+ 
+    .stocks-content .strelka img{ 
+        width: 40px; 
+        height: 85px; 
+    } 
+ 
+    .stocks-content{ 
+        gap:10px; 
+        margin-top: 1px; 
+    } 
+} 
+ 
+@media (max-width:400px) { 
+    .grains-content h1{ 
+        font-size: 60px; 
+    } 
+ 
+    .stocks-leaner{ 
+        margin-top: -20px; 
+    } 
+     
+    .strelka{ 
+        width: 30px; 
+        height: 70px; 
+       margin-bottom: 190px; 
+    } 
+ 
+    .stocks-content{ 
+        gap:6px; 
+        height: 100%; 
+         
+    } 
+ 
+    .stocks-wrapper { 
+        height: 100%; 
+    } 
+} 
+ 
+ 
+ 
+/* stocks */ 
+ 
+.drinks{ 
+    background-image: url(/assets/img/banner/stocks.png); 
+    background-size: cover; 
+    
+} 
+ 
+.drinks-wrapper{ 
+    height: 669px; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+     
+} 
+ 
+.drinks-wrapper h1{ 
+    font-family: Sunday; 
+    font-size: 48px; 
+    color: #FFFFFF; 
+    margin-top: 23px; 
+} 
+ 
+.drinks-content{ 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    margin-top: 59px; 
+     
+} 
+ 
+.drinks-content h1{ 
+    color: #FFC579 ; 
+} 
+ 
+.drinks-content h2{ 
+    margin-top: 77px; 
+    font-family:Montserrat Alternates ; 
+    color: #FFFFFF; 
+    font-weight: 200; 
+    font-size: 32px; 
+} 
+ 
+ 
+@media (max-width:960px) { 
+    /* .drinks-content .strelka img{ 
+        width: 50px; 
+        height: 95px; 
+    }  */
+ 
+    
+} 
+ 
+@media (max-width:380px){ 
+    .drink h1{ 
+        font-size: 40px; 
+    } 
+ 
+    
+}
+
+
+
+/* menu */
+
+
+.menu{
+    background-color: #361D04;
+}
+
+.menu-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap:50px;
+}
+
+.menu-wrapper h1{
+    font-family: Sunday;
+    color: #FFFFFF;
+    font-size: 48px;
+    margin-top: 23px;
+}
+
+.menu-content{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: Sunday;
+    color: #FFFFFF;
+
+    flex-wrap: wrap;
+}
+
+.menu-drink-content h3{
+    padding: 11px;
+    font-size: 34px;
+    font-weight: 200;
+    position: relative;
+   
+}
+
+.menu-drink{
+    flex: 1;
+    display: flex;
+    justify-content: start;
+}
+
+.menu-dessert-content {
+    height: 100%;
+
+    position: relative;
+}
+
+.menu-dessert-content h3{
+    padding: 11px;
+    font-size: 34px;
+    font-weight: 200;
+    position: relative;
+}
+.menu-dessert{
+    background-image: url(/assets/img/menu/dessert.png);
+    background-repeat: no-repeat;
+    background-position: right -80px bottom -40px ;
+   flex: 1;
+   justify-content: end;
+
+}
+
+/* .desserts{
+   
+    position: absolute;
+    
+   
+} */
+
+
+
+
+.menu-drink img{
+   position: absolute;
+   margin-left: -90px;
+   background-attachment: fixed;
+}
+
+/* .menu-dessert img{
+    position: absolute;
+    margin-top: -90px;
+    right: 80px;
+    background-attachment: local;
+    right: 0;
+ } */
+
+.menu-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .menu-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 292px;
+    background-color: #C89057 ;
+    font-size: 24px ;
+    font-family: Sunday;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+ }
+
+ .menu-button button:hover{
+    box-shadow: 0px 0px 20px #FFE4C1;
+ }
+
+
+@media (max-width:1370px) {
+    .menu-content{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* .menu-dessert img{
+        position: fixed;
+    } */
+
+    .menu-dessert-content{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:680px){
+    .menu-drink-content h3{
+        font-size: 24px;
+    }
+    .menu-dessert-content h3{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:500px){
+    .menu-drink-content h3{
+        font-size: 18px;
+    }
+    .menu-dessert-content h3{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:420px){
+    .menu-drink-content h3{
+        font-size: 16px;
+    }
+    .menu-dessert-content h3{
+        font-size: 16px;
+    }
+}
+
+
+/* footer */
+
+footer{
+    background-color: #361D04;
+    padding: 40px;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.footer-leaner{
+    margin-top: 157px;
+    height: 3px;
+    width: 676px;
+    background-color: #FFBE7C;
+}
+
+.footer-nav{
+    display: flex;
+    font-family: Sunday;
+    gap: 44px;
+    text-decoration: none;
+}
+
+.footer-nav a{
+    color: #FFFFFF;
+    font-size: 30px;
+}
+.footer-nav a:hover{
+    text-shadow: 0px 0px 30px #FFFFFF;
+}
+
+.footer-soc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 94px;
+}
+.footer-soc img{
+    cursor: pointer;
+}
+
+.footer-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 192px;
+    background-color: #C89057 ;
+    font-size: 24px ;
+    font-family: Sunday;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #B6741E;
+}
+
+.footer-button button:hover{
+    box-shadow: 0px 0px 30px #B6741E;
+}
+
+@media (max-width:680px) {
+    .footer-leaner{
+        width: 100%;
+    }
+    .footer-nav{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-soc{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap:70px;
+    }
+}
+
+@media (max-width:1000px) {
+    .container{
+        padding: 20px 0px;
+    }
+}
