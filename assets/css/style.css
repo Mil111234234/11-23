@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: "Brusher" ;
-    src: url(/assets/shrifts/ofont.ru_Brusher.ttf);
+    src: url(../shrifts/ofont.ru_Brusher.ttf);
 }
 
 @font-face {
     font-family: "Sunday" ;
-    src: url(/assets/shrifts/ofont.ru_Sunday.ttf);
+    src: url(../shrifts/ofont.ru_Sunday.ttf);
 }
 
 
@@ -90,7 +90,7 @@ header{
 /* banner */
 
 .banner{
-    background-image: url(/assets/img/banner/banner.png);
+    background-image: url(../img/banner/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
@@ -197,7 +197,7 @@ header{
 
 @font-face {
     font-family: "Montserrat Alternates";
-    src: url(/assets/shrifts/MontserratAlternates-Regular.ttf);
+    src: url(../shrifts/MontserratAlternates-Regular.ttf);
 }
 
 .us{
@@ -671,7 +671,7 @@ color: #33A000;
 /* stocks */ 
  
 .drinks{ 
-    background-image: url(/assets/img/banner/stocks.png); 
+    background-image: url(../img/banner/stocks.png); 
     background-size: cover; 
     
 } 
@@ -799,7 +799,7 @@ color: #33A000;
     position: relative;
 }
 .menu-dessert{
-    background-image: url(/assets/img/menu/dessert.png);
+    background-image: url(../img/menu/dessert.png);
     background-repeat: no-repeat;
     background-position: right -80px bottom -40px ;
    flex: 1;
