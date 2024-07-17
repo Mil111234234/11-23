@@ -180,6 +180,7 @@ header{
 
     .banner-leaner{
         width: 100%;
+        margin-top: -25px;
     }
     
     
@@ -446,6 +447,7 @@ color: #33A000;
 
     .stocks-leaner{
         width: 420px;
+        margin-top: -25px;
     }
 
     .strelka{
